@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Table Details</title>
+    <link rel="stylesheet" href="userstyle.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <br><br><br>
+            <b style="font-size: small;">USERS</b>
+            <br><br>
+            <hr style="color: aliceblue;">
+        </div>
+        <div class="main">
+            <section class="top-section">
+                <!-- section 1 -->
+            </section>
+            <section class="bottom-section">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Sl No <span id="serialSort" class="sort-symbol">▲<br>▼</span></th>
+                            <th>Name <span id="nameSort" class="sort-symbol">▲<br>▼</span></th>
+                            <th class="gender-header" style="display: none;">Gender</th> 
+                            <th>City <span id="citySort" class="sort-symbol">▲<br>▼</span></th>
+                            <th>Phone Number</th>
+                            <th><button id="addButton">+ Add</button></th>
+                        </tr>
+                    </thead>
+                    <tbody id="userTableBody" class="no-users-body">
+                        <tr>
+                            <td colspan="6" class="no-users">No Users added</td> 
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
+    </div>
+
+    <div id="popupForm" class="popup-form">
+        <div class="popup-content">
+            <img src="assets/close.png" alt="Close" class="close-btn" id="closePopup">
+            <h2>Add User</h2>
+            <form id="addUserForm">
+                <div class="form-grid">
+                    <div class="form-row">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="gender">Gender</label>
+                        <input type="text" id="gender" name="gender" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="phone">Phone No</label>
+                        <input type="text" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="city">City</label>
+                        <input type="text" id="city" name="city" required>
+                    </div>
+                    <div class="form-footer">
+                        <button type="submit" class="submit-btn">Add User</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Delete Confirmation -->
+    <div id="deletePopup" class="delete-popup">
+        <div class="delete-popup-content">
+            <h2>Delete User?</h2>
+            <p>Are you sure you want to delete <span id="deleteUserName"></span>?</p>
+            <div class="delete-popup-actions">
+                <button id="cancelDelete" class="cancel-btn">Cancel</button>
+                <button id="confirmDelete" class="delete-btn">Delete</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="viewPopup" class="view-popup">
+        <div class="view-popup-content">
+            <img src="assets/close.png" alt="Close" class="view-close-btn" id="closeViewPopup">
+            <h2>User Details</h2>
+            <div id="viewDetails">
+                <div class="view-field">
+                    <label>Name</label>
+                    <p id="viewName"></p>
+                </div>
+                <div class="view-field">
+                    <label>Gender</label>
+                    <p id="viewGender"></p>
+                </div>
+                <div class="view-field">
+                    <label>Email</label>
+                    <p id="viewEmail"></p>
+                </div>
+                <div class="view-field">
+                    <label>Phone No</label>
+                    <p id="viewPhone"></p>
+                </div>
+                <div class="view-field">
+                    <label>City</label>
+                    <p id="viewCity"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="user.js"></script>
+</body>
+</html>

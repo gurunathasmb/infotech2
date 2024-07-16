@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/Banner.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 78%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 60%;
+    padding: 20px;
+    background-color: rgba(27, 27, 27, 1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.logo {
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+.options button {
+    margin: 10px;
+    padding: 15px 40px;
+    font-size: 16px;
+    background-color: rgba(27, 27, 27, 1);
+    color: white;
+    border: 2px solid rgba(27, 27, 27, 1);
+    cursor: pointer;
+    border-style:groove; 
+}
+
+.options button:hover, .options button:active {
+    background-color: white;
+    color: rgba(27, 27, 27, 1);
+}
+
+.input-container {
+    margin-top: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+#nextBtn {
+    margin-top: 50px; /* Adjusted margin top to move the button down */
+    margin-left: 350px; /* Added margin right to move the button to the right */
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: #FF9933;
+    color: white;
+    border: 2px solid rgba(27, 27, 27, 1);
+    cursor: pointer;
+}
+
+#nextBtn:hover, #nextBtn:active {
+    background-color: #FF9933;
+    color:white;
+}
+
+.otp-container {
+    display: flex;
+    justify-content: center;
+    gap: 5px; /* Decreased gap between OTP inputs */
+    margin-top: 20px;
+}
+
+.otp-input {
+    width: 30px; /* Decreased width of OTP inputs */
+    padding: 5px; /* Decreased padding */
+    font-size: 16px; /* Decreased font size */
+    text-align: center;
+}
