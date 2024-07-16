@@ -44,12 +44,12 @@ body {
 }
 
 .options button:hover, .options button:active {
-    background-color: white;
+    background-color: yellow;
     color: rgba(27, 27, 27, 1);
 }
 
 .input-container {
-    margin-top: 20px;
+    margin-top: 25px;
 }
 
 .hidden {
@@ -61,14 +61,14 @@ body {
     margin-left: 350px; /* Added margin right to move the button to the right */
     padding: 10px 20px;
     font-size: 20px;
-    background-color: #FF9933;
+    background-color:#ff99cc;
     color: white;
     border: 2px solid rgba(27, 27, 27, 1);
     cursor: pointer;
 }
 
 #nextBtn:hover, #nextBtn:active {
-    background-color: #FF9933;
+    background-color: #FF99cc;
     color:white;
 }
 
