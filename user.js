@@ -38,8 +38,8 @@ document.addEventListener('DOMContentLoaded', function() {
             <td>${city}</td>
             <td>${phone}</td>
             <td>
-                <span class="view-btn" onclick="viewUser(this)"><img src="assets/view.png" alt="View"></span>
-                <span class="delete-btn" onclick="confirmDeleteUser(this)"><img src="assets/delete.png" alt="Delete"></span>
+                <span class="view-btn" onclick="viewUser(this)"><img src="view.png" alt="View"></span>
+                <span class="delete-btn" onclick="confirmDeleteUser(this)"><img src="delete.png" alt="Delete"></span>
             </td>
             <td style="display: none;">${email}</td>
         `;
